@@ -81,7 +81,41 @@
 ////////////////////////////////////////////////////////ASSIGNMENT OPERATORS
 
 
+// let x = 5;
+// // x = x + 2
+// x *=7
+// console.log(x);
+
+//   ////////////////////////////////////////////////////COMPARISION OPERATOR
+
+
 let x = 5;
-// x = x + 2
-x *=7
-console.log(x);
+// /////////////////////////////////////////////////////Relational operator
+// console.log(x < 5);
+// console.log(x <= 5);
+
+// console.log(x > 5);
+// console.log(x >= 5);
+
+
+
+// /////////////////////////////////////////////EQUALITY OPERATOR
+// console.log(x === 5);
+// console.log(x !== 5);
+
+
+//string comparision
+
+console.log('alan' > 'anbu');
+
+////comparision of different types
+
+console.log('1' < 5);
+console.log(true == 0);
+console.log(true == 1);
+
+
+
+
+
+
