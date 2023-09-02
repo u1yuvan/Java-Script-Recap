@@ -106,13 +106,14 @@ let x = 5;
 
 //string comparision
 
-console.log('alan' > 'anbu');
+// console.log('alan' > 'anbu');
 
 ////comparision of different types
 
-console.log('1' < 5);
-console.log(true == 0);
-console.log(true == 1);
+// console.log('1' < 5);
+// console.log(true == 0);
+// console.log(true == 1);
+
 
 
 
