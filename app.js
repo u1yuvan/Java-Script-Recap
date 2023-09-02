@@ -59,22 +59,29 @@
 // greetuser("virat", "kohli")
 
 
-///////////////////////////////////////////////////////////////////ARITHMETIC  OPERATORS(ADDITION SUB MULTI DIVISION)
-function add(number1,number2){
-    console.log(number1 + number2);
-}
+// ///////////////////////////////////////////////////////////////////ARITHMETIC  OPERATORS(ADDITION SUB MULTI DIVISION)
+// function add(number1,number2){
+//     console.log(number1 + number2);
+// }
 
-add(570980,384689)
+// add(570980,384689)
 
-let Number1 = 7;
-let Number2 = 3;
+// let Number1 = 7;
+// let Number2 = 3;
 
-// INCREMENT(++)
-console.log(Number1++);
-console.log(Number1);
+// // INCREMENT(++)
+// console.log(Number1++);
+// console.log(Number1);
 
-// DECREMENT (--)
+// // DECREMENT (--)
 
-console.log(--Number1);
-console.log(Number1);
+// console.log(--Number1);
+// console.log(Number1);
 
+////////////////////////////////////////////////////////ASSIGNMENT OPERATORS
+
+
+let x = 5;
+// x = x + 2
+x *=7
+console.log(x);
