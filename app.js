@@ -114,9 +114,19 @@ let x = 5;
 // console.log(true == 0);
 // console.log(true == 1);
 
+//  strict eqality operator ===  (number === number) ok  (number (5) === string "7")undefined
+// lose equality operator  == ( number == number) ok (srting == number)ok
 
 
+// //////////////////////////////////TERINARY OPERATORS
+
+// If the person age is more than 18,they are "adult" category otherwise child category......................................
 
 
+let age = 20;
+
+let type = age >= 18 ? "Adult Ticket" : "Child Ticket";
+
+console.log(type);
 
 
