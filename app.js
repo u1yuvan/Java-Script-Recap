@@ -2,7 +2,7 @@
 // var - old way of saving variables
 // let - modern way of saving varables(we can modify or edit value any time)
 // const - we can't change the value (permanent value we can't edit or modify)
-                                    //VARIABLES
+//VARIABLES
 // {object}
 // [array]
 
@@ -17,7 +17,7 @@
 // console.log(msg, DOB);
 
 
- ///////////////////////////////////////OBJECT
+///////////////////////////////////////OBJECT
 // let laptopSpecifications= {
 //     Brand:"HP",
 //     Model:"hp15s 15inch",
@@ -37,10 +37,31 @@
 
 
 
-                                                  //ARRAY
+//ARRAY
 
-let colors =["Blue", "Black", "Red","Green"]
-colors[5] = "white"
+// let colors =["Blue", "Black", "Red","Green"]
+// colors[5] = "white"
 
-console.log(colors);
+// console.log(colors);
 
+
+
+//FUNCTIONS
+
+function greetuser(firstname, lastname) {
+    let msg = "hello my name is " + firstname + " " + lastname + " im Building JS";
+    console.log(msg);
+}
+
+
+greetuser("yuvan", "raj")
+
+greetuser("virat", "kohli")
+
+
+
+function add(number1,number2){
+    console.log(number1 + number2);
+}
+
+add(570980,384689)
