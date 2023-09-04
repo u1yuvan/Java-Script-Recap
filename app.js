@@ -89,7 +89,7 @@
 //   ////////////////////////////////////////////////////COMPARISION OPERATOR
 
 
-let x = 5;
+// let x = 5;
 // /////////////////////////////////////////////////////Relational operator
 // console.log(x < 5);
 // console.log(x <= 5);
@@ -123,10 +123,28 @@ let x = 5;
 // If the person age is more than 18,they are "adult" category otherwise child category......................................
 
 
-let age = 20;
+// let age = 20;
 
-let type = age >= 18 ? "Adult Ticket" : "Child Ticket";
+// let type = age >= 18 ? "Adult Ticket" : "Child Ticket";
 
-console.log(type);
+// console.log(type);
+
+
+///////////////////////////////////////////////////LOGICAL OPERATOR
+
+// and &&
+// or ||
+// not !
+
+
+// highIncome, Cibilscore -> loan eligible, Ineligible
+
+let highIncome = true;
+let Cibilscore = true;
+eligiblePerson = highIncome || Cibilscore
+
+let ApplicationStatus = ! eligiblePerson 
+console.log("Loan Status: " +  eligiblePerson);
+console.log("Application Status: " +  ApplicationStatus);
 
 
