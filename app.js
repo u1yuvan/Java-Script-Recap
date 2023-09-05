@@ -229,12 +229,22 @@
 //     console.log("number #1");
 // }
 
-for(let i = 20; i >= 1; i--){
+// for(let i = 20; i >= 1; i--){
 
-    if(i % 2 !==1){
-        console.log("Number #", i);
-    }
+//     if(i % 2 !==1){
+//         console.log("Number #", i);
+//     }
     
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////WHILE LOOP
+let i = 1
+
+while(i <= 20) {
+
+    if(i % 2 ==0){
+        console.log("Number #"+ i);
+    }
+    i++   
 }
 
 
