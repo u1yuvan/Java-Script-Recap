@@ -205,22 +205,36 @@
 // }
 
 
-let Marks = 95;
+// let Marks = 95;
 
-switch (true) {
+// switch (true) {
     
-    case (Marks > 90):
-        console.log("EXCELLENT"); break;
+//     case (Marks > 90):
+//         console.log("EXCELLENT"); break;
 
-    case (Marks > 40):
-        console.log("JUST PASS"); break;
+//     case (Marks > 40):
+//         console.log("JUST PASS"); break;
 
-    case (Marks < 40):
-        console.log("FAIL JUST OPEN THE FUCKIN BOOK AND READ IT"); break;
+//     case (Marks < 40):
+//         console.log("FAIL JUST OPEN THE FUCKIN BOOK AND READ IT"); break;
     
 
-    default:
-        console.log("FAIL JUST OPEN THE FUCKIN BOOK AND READ IT ");
+//     default:
+//         console.log("FAIL JUST OPEN THE FUCKIN BOOK AND READ IT ");
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////FOR LOOP
+// SYNTAX
+// for(initialExpression; Condition; step){
+//     console.log("number #1");
+// }
+
+for(let i = 20; i >= 1; i--){
+
+    if(i % 2 !==1){
+        console.log("Number #", i);
+    }
+    
 }
 
 
