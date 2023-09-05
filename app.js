@@ -139,12 +139,82 @@
 
 // highIncome, Cibilscore -> loan eligible, Ineligible
 
-let highIncome = true;
-let Cibilscore = true;
-eligiblePerson = highIncome || Cibilscore
+// let highIncome = true;
+// let Cibilscore = true;
+// eligiblePerson = highIncome || Cibilscore
 
-let ApplicationStatus = ! eligiblePerson 
-console.log("Loan Status: " +  eligiblePerson);
-console.log("Application Status: " +  ApplicationStatus);
+// let ApplicationStatus = !
+//  eligiblePerson 
+// console.log("Loan Status: " +  eligiblePerson);
+// console.log("Application Status: " +  ApplicationStatus);
+
+
+// let userColor = null
+// let defaultColor = "White"
+
+// currentColor = userColor|| defaultColor;
+
+// console.log("Selected Color: "+ currentColor);
+
+
+/////////////////////////////////////////////////IF ELSE (CONDITION STATEMENT)
+
+// let isRaining = false;
+// let isCloudy = false;
+
+
+// if (isRaining || isCloudy)
+//     console.log("Dont forget to take umbrella!");
+// else
+//     console.log("it's a clear sky enjoy your day");
+
+// if the time between 12am to 1pm  -> Good Morning
+// if the time between 1pm to 5pm  -> Good Afternoon
+// if the time between 5pm to 12am  -> Good Evening
+
+let hour = new Date().getHours();
+
+
+if (hour >= 0 && hour <= 12)
+    console.log("Good Morning");
+
+else if (hour >= 12 && hour <= 17)
+    console.log("Good Afternoon");
+
+else
+    console.log("Good Evening");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
