@@ -172,20 +172,56 @@
 // if the time between 1pm to 5pm  -> Good Afternoon
 // if the time between 5pm to 12am  -> Good Evening
 
-let hour = new Date().getHours();
+// let hour = new Date().getHours();
 
 
-if (hour >= 0 && hour <= 12)
-    console.log("Good Morning");
+// if (hour >= 0 && hour <= 12)
+//     console.log("Good Morning");
 
-else if (hour >= 12 && hour <= 17)
-    console.log("Good Afternoon");
+// else if (hour >= 12 && hour <= 17)
+//     console.log("Good Afternoon");
 
-else
-    console.log("Good Evening");
+// else
+//     console.log("Good Evening");
+
+/////////////////////////////////////////////////////////CONDITION STATEMENT (switch case)
+// let grade = "E"
+
+// switch (grade) {
+//     case "S":
+//         console.log("Diamond Grade"); break;
+
+//     case "A":
+//         console.log("Golden Grade"); break;
+
+//     case "E":
+//         console.log("Bronze Grade"); break;
+
+//     case "U":
+//         console.log("Failed Grade"); break;
+
+//     default:
+//         console.log("Unknown Grade");
+// }
 
 
+let Marks = 95;
 
+switch (true) {
+    
+    case (Marks > 90):
+        console.log("EXCELLENT"); break;
+
+    case (Marks > 40):
+        console.log("JUST PASS"); break;
+
+    case (Marks < 40):
+        console.log("FAIL JUST OPEN THE FUCKIN BOOK AND READ IT"); break;
+    
+
+    default:
+        console.log("FAIL JUST OPEN THE FUCKIN BOOK AND READ IT ");
+}
 
 
 
