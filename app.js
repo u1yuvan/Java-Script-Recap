@@ -208,7 +208,7 @@
 // let Marks = 95;
 
 // switch (true) {
-    
+
 //     case (Marks > 90):
 //         console.log("EXCELLENT"); break;
 
@@ -217,7 +217,7 @@
 
 //     case (Marks < 40):
 //         console.log("FAIL JUST OPEN THE FUCKIN BOOK AND READ IT"); break;
-    
+
 
 //     default:
 //         console.log("FAIL JUST OPEN THE FUCKIN BOOK AND READ IT ");
@@ -234,21 +234,30 @@
 //     if(i % 2 !==1){
 //         console.log("Number #", i);
 //     }
-    
+
 // }
 /////////////////////////////////////////////////////////////////////////////////////////////////WHILE LOOP
-let i = 1
+let i = 5
 
-while(i <= 20) {
+while (i <= 20) {
+    console.log(i);
 
-    if(i % 2 ==0){
-        console.log("Number #"+ i);
+    if (i % 2 !== 0
+    ) {
+        console.log("Number while #" + i);
     }
-    i++   
+    i++
 }
 
-
-
+////////////////////////////////////////////////////////////////////////////////////////////////DO-WHILE
+do {
+    console.log(i);
+    if (i % 2 !== 0
+        ) {
+            console.log("Number do-while #" + i);
+        }
+        i++
+} while(i <= 20)
 
 
 
