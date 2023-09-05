@@ -237,29 +237,46 @@
 
 // }
 /////////////////////////////////////////////////////////////////////////////////////////////////WHILE LOOP
-let i = 5
+// let i = 5
 
-while (i <= 20) {
-    console.log(i);
+// while (i <= 20) {
 
-    if (i % 2 !== 0
-    ) {
-        console.log("Number while #" + i);
-    }
-    i++
+//     if (i % 2 !== 0
+//     ) {
+//         console.log("Number while #" + i);
+//     }
+//     i++
+// }
+
+// ////////////////////////////////////////////////////////////////////////////////////////////////DO-WHILE
+// do {
+//     if (i % 2 !== 0
+//         ) {
+//             console.log("Number do-while #" + i);
+//         }
+//         i++
+// } while(i <= 20)
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////FOR IN LOOP
+
+const person = {
+    name:"yuvan",
+    age:21,
+
+
+};
+
+for(let key in person){
+    console.log(key+": " + person[key]);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////DO-WHILE
-do {
-    console.log(i);
-    if (i % 2 !== 0
-        ) {
-            console.log("Number do-while #" + i);
-        }
-        i++
-} while(i <= 20)
 
+let colors =['red', 'blue', 'green', 'black'];
 
+for(let key in colors){
+    console.log(colors[key]);
+}
 
 
 
