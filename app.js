@@ -272,20 +272,55 @@
 // }
 
 
-let colors =['red', 'blue', 'green', 'black'];
+// let colors =['red', 'blue', 'green', 'black'];
 
-// for(let key in colors){
-//     console.log(colors[key]);
+// // for(let key in colors){
+// //     console.log(colors[key]);
+// // }
+// /////////////////////////////////////////////////////////////////////////////////////////////////////FOR OF LOOP
+
+
+// for(let color of colors){
+//     console.log("color: "+color);
 // }
-/////////////////////////////////////////////////////////////////////////////////////////////////////FOR OF LOOP
 
 
-for(let color of colors){
-    console.log("color: "+color);
-}
+// ///////////////////////////////////////////////////////JavaScript Object and OOP(Object Oriented Programming)
+
+// let name = "yuvan";
+// let age = 21;
+// let interest = ['web development and  gaming'];
+
+// let address = {
+//     city: "coimbatore",
+//     state: 'tamilnadu',
+// }
+
+// function greetuser(){
+//     let msg = `My name is ${name}, I love ${interest}`;
+//     console.log(msg);
+// }
+
+// greetuser();
+
+let person = {
+    name: 'yuvan',
+    age: 21,
+    interest: ['web development, gaming'],
+    address: {
+        city: "coimbatore",
+        state: 'tamilnadu',
+
+    },
+    greeting: function(){
+            let msg = `My name is ${this.name}, I love ${this.interest}`;
+            console.log(msg);
+        }
+
+    };
 
 
-
+    person.greeting();
 
 
 
