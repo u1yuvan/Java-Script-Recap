@@ -303,26 +303,40 @@
 
 // greetuser();
 
-let person = {
-    name: 'yuvan',
-    age: 21,
-    interest: ['web development, gaming'],
-    address: {
-        city: "coimbatore",
-        state: 'tamilnadu',
+// let person = {
+//     name: 'yuvan',
+//     age: 21,
+//     interest: ['web development, gaming'],
+//     address: {
+//         city: "coimbatore",
+//         state: 'tamilnadu',
 
-    },
-    greeting: function(){
-            let msg = `My name is ${this.name}, I love ${this.interest}`;
+//     },
+//     greeting: function(){
+//             let msg = `My name is ${this.name}, I love ${this.interest}`;
+//             console.log(msg);
+//         }
+
+//     };
+// person.greeting();
+
+
+////////////////////////////////////////////////////////////JavaScript Factory Function
+function createPerson(name){
+   return {
+        name,
+        greeting() {
+            let msg = `My name is ${this.name}`;
             console.log(msg);
-        }
-
+        } 
     };
+};
 
+let YUVAN = createPerson("YUVAN");
+let sridhar = createPerson("sridhar");
 
-    person.greeting();
-
-
+YUVAN.greeting();
+sridhar.greeting();
 
 
 
