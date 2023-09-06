@@ -333,16 +333,31 @@
 
 /////////////////////////////////////////////////////CONSTRUCTOR FUNCTION
 
-function Person(name){
-    this.name = name;
-    this.greeting = function(){
-        console.log(`My name is ${this.name}`);
-    }
+// function Person(name){
+//     this.name = name;
+//     this.greeting = function(){
+//         console.log(`My name is ${this.name}`);
+//     }
+// }
+
+// let yuvan = new Person('yuvan');
+
+// yuvan.greeting();
+
+//////////////////////////////////////////////////////////////////JavaScript Dynamic Nature of Objects
+
+
+const person = {
+    name:'yuvan'
 }
 
-let yuvan = new Person('yuvan');
+person.age = 21;
+person.greeting = function(){}
 
-yuvan.greeting();
+delete person.greeting
+delete person.name
+
+console.log(person);
 
 
 
