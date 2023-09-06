@@ -347,19 +347,33 @@
 //////////////////////////////////////////////////////////////////JavaScript Dynamic Nature of Objects
 
 
-const person = {
-    name:'yuvan'
+// const person = {
+//     name:'yuvan'
+// }
+
+// person.age = 21;
+// person.greeting = function(){}
+
+// delete person.greeting
+// delete person.name
+
+// console.log(person)
+
+//}
+
+
+
+///////////////////////////////////////////////////////////Enumerating properties of an Object
+const user = {
+    name: 'yuvan',
+    getfullname() {
+        console.log(`My name is ${this.name}`);
+    }
 }
 
-person.age = 21;
-person.greeting = function(){}
-
-delete person.greeting
-delete person.name
-
-console.log(person);
-
-
+if ('age' in user ){
+    console.log("yes");
+}
 
 
 
