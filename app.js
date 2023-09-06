@@ -322,21 +322,27 @@
 
 
 ////////////////////////////////////////////////////////////JavaScript Factory Function
-function createPerson(name){
-   return {
-        name,
-        greeting() {
-            let msg = `My name is ${this.name}`;
-            console.log(msg);
-        } 
-    };
-};
+// function createPerson(name){
+//    return {
+//         name,
+//         greeting() {
+//             console.log(`My name is ${this.name}`);
+//         } 
+//     };
+// };
 
-let YUVAN = createPerson("YUVAN");
-let sridhar = createPerson("sridhar");
+/////////////////////////////////////////////////////CONSTRUCTOR FUNCTION
 
-YUVAN.greeting();
-sridhar.greeting();
+function Person(name){
+    this.name = name;
+    this.greeting = function(){
+        console.log(`My name is ${this.name}`);
+    }
+}
+
+let yuvan = new Person('yuvan');
+
+yuvan.greeting();
 
 
 
