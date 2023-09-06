@@ -260,26 +260,29 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////FOR IN LOOP
 
-const person = {
-    name:"yuvan",
-    age:21,
+// const person = {
+//     name:"yuvan",
+//     age:21,
 
 
-};
+// };
 
-for(let key in person){
-    console.log(key+": " + person[key]);
-}
+// for(let key in person){
+//     console.log(key+": " + person[key]);
+// }
 
 
 let colors =['red', 'blue', 'green', 'black'];
 
-for(let key in colors){
-    console.log(colors[key]);
+// for(let key in colors){
+//     console.log(colors[key]);
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////////FOR OF LOOP
+
+
+for(let color of colors){
+    console.log("color: "+color);
 }
-
-
-
 
 
 
