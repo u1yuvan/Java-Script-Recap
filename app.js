@@ -377,15 +377,30 @@
 
 // JavaScript Inbuilt Objects
 
+//////////////////////////////////////////////////////////////////// console.log(Math.random() * (100 - 1) + 1);
 
-// console.log(Math.random() * (100 - 1) + 1);
+// let Marks =[45,56,74,13,85,59,96,69];
 
-let Marks =[45,56,74,13,85,59,96,69];
+// let result = Math.max(...Marks);
 
-let result = Math.max(...Marks);
+// console.log("Maximum Marks:" ,result);
 
-console.log("Maximum Marks:" ,result);
+//////////////////////////////////////////////////////////////////////////TEMPLATE LITERALS
+const name = "stark"
+const message ="Thankyou "+name+" for watching\n\"Half-Baked\" youtube Channel"
 
+const message2= `Thankyou ${name} for watching
+"Half-Baked" youtube Channel
+
+
+from
+yuvan`
+
+
+
+
+console.log(message);
+console.log(message2);
 
 
 
