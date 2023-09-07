@@ -405,18 +405,12 @@
 ///////////////////////////////////////////////////////////////////////Adding Elements to an JavaScript Array
 
 
-const number =["Supra","GTR","KOIENSEGG","LAMBORGINI"];
+const Cars = ["Supra", "GTR", "KOIENSEGG", "LAMBORGINI"];
 
-//push
-number.push("BENTLY")
+// console.log(Cars.indexOf("Supra") !== -1);
 
-//unshift
-number.unshift("Mchlaren")
 
-//splice
-number.splice(2,0,"BUGATI")
-
-console.log(number);
+console.log(Cars.includes("GTR"));
 
 
 
