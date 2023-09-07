@@ -364,23 +364,27 @@
 
 
 ///////////////////////////////////////////////////////////Enumerating properties of an Object
-const user = {
-    name: 'yuvan',
-    getfullname() {
-        console.log(`My name is ${this.name}`);
-    }
-}
+// const user = {
+//     name: 'yuvan',
+//     getfullname() {
+//         console.log(`My name is ${this.name}`);
+//     }
+// }
 
-if ('age' in user ){
-    console.log("yes");
-}
+// let another = {user};
 
+// console.log(another);
 
-
-
+// JavaScript Inbuilt Objects
 
 
+// console.log(Math.random() * (100 - 1) + 1);
 
+let Marks =[45,56,74,13,85,59,96,69];
+
+let result = Math.max(...Marks);
+
+console.log("Maximum Marks:" ,result);
 
 
 
