@@ -386,26 +386,37 @@
 // console.log("Maximum Marks:" ,result);
 
 //////////////////////////////////////////////////////////////////////////TEMPLATE LITERALS
-const name = "stark"
-const message ="Thankyou "+name+" for watching\n\"Half-Baked\" youtube Channel"
+// const name = "stark"
+// const message ="Thankyou "+name+" for watching\n\"Half-Baked\" youtube Channel"
 
-const message2= `Thankyou ${name} for watching
-"Half-Baked" youtube Channel
-
-
-from
-yuvan`
+// const message2= `Thankyou ${name} for watching
+// "Half-Baked" youtube Channel
 
 
-
-
-console.log(message);
-console.log(message2);
+// from
+// yuvan`
 
 
 
 
+// console.log(message);
+// console.log(message2);
 
+///////////////////////////////////////////////////////////////////////Adding Elements to an JavaScript Array
+
+
+const number =["Supra","GTR","KOIENSEGG","LAMBORGINI"];
+
+//push
+number.push("BENTLY")
+
+//unshift
+number.unshift("Mchlaren")
+
+//splice
+number.splice(2,0,"BUGATI")
+
+console.log(number);
 
 
 
