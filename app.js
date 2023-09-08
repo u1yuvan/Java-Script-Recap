@@ -422,8 +422,11 @@ const orders = [
 ];
 
     
- let result = orders.find(function(order){
-   return order.item === "earpods"
-   })
+//  let result = orders.find(function(order){
+//    return order.item === "earpods"
+//    })//////////////////////////////////////////////////////////modifing this function into ARROW FUNCTION
+
+   let result = orders.find( (order) => order.item === "earpods")
 
    console.log(result);
+
