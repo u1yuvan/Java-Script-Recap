@@ -432,22 +432,43 @@
 
 //////////////////////////////////////////////////////////////Removing Element in JavaScript Array
 
-const number = [18,37,20,34,5647,46,456]
+// const number = [18,37,20,34,5647,46,456]
 
 
-//end 
-// to add .push => pop to remove
-number.pop()
+// //end 
+// // to add .push => pop to remove
+// number.pop()
 
 
-//start
-//unshift to add => shift to remove
-number.shift()
+// //start
+// //unshift to add => shift to remove
+// number.shift()
 
 
-//middle
-//splice to add in middle => 
-number.splice(1,1)
+// //middle
+// //splice to add in middle => 
+// number.splice(1,1)
 
 
-console.log(number);
+// console.log(number);
+
+
+////////////////////////////////////////////////////////////////////////Emptying an JavaScript Array
+
+let
+ numbers = [1,3,5,7,2]
+
+// solution  1
+// numbers = [];
+
+// 2
+// numbers.length = 0;
+
+// 3
+// numbers.splice(0, numbers.length);
+
+// 4 
+while (numbers.length) numbers.pop();
+
+
+console.log(numbers);
