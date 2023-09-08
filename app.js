@@ -402,16 +402,28 @@
 // console.log(message);
 // console.log(message2);
 
-///////////////////////////////////////////////////////////////////////Adding Elements to an JavaScript Array
+///////////////////////////////////////////////////////////////////////Finding Elements in a JavaScript Array
 
 
-const Cars = ["Supra", "GTR", "KOIENSEGG", "LAMBORGINI"];
+// const Cars = ["Supra", "GTR", "KOIENSEGG", "LAMBORGINI"];
 
-// console.log(Cars.indexOf("Supra") !== -1);
-
-
-console.log(Cars.includes("GTR"));
+// // console.log(Cars.indexOf("Supra") !== -1);
 
 
+// console.log(Cars.includes("GTR"));
 
 
+
+////////////////////////////////////////////////////////////////////////Finding Elements in a JavaScript Reference Array
+
+const orders = [
+    {id:1, item: "smartphone", quantity:1},
+    {id:2, item: "earpods", quantity:1}
+];
+
+    
+ let result = orders.find(function(order){
+   return order.item === "earpods"
+   })
+
+   console.log(result);
