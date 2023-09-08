@@ -416,17 +416,38 @@
 
 ////////////////////////////////////////////////////////////////////////Finding Elements in a JavaScript Reference Array
 
-const orders = [
-    {id:1, item: "smartphone", quantity:1},
-    {id:2, item: "earpods", quantity:1}
-];
+// const orders = [
+//     {id:1, item: "smartphone", quantity:1},
+//     {id:2, item: "earpods", quantity:1}
+// ];
 
     
 //  let result = orders.find(function(order){
 //    return order.item === "earpods"
 //    })//////////////////////////////////////////////////////////modifing this function into ARROW FUNCTION
 
-   let result = orders.find( (order) => order.item === "earpods")
+//    let result = orders.find( (order) => order.item === "earpods")
 
-   console.log(result);
+//    console.log(result);
 
+//////////////////////////////////////////////////////////////Removing Element in JavaScript Array
+
+const number = [18,37,20,34,5647,46,456]
+
+
+//end 
+// to add .push => pop to remove
+number.pop()
+
+
+//start
+//unshift to add => shift to remove
+number.shift()
+
+
+//middle
+//splice to add in middle => 
+number.splice(1,1)
+
+
+console.log(number);
