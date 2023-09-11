@@ -477,15 +477,17 @@
 let shoppingCartSnacks = [{item: "Potato chips"} ];
 let shoppingCart2 = ["banana chips", "Soft Drinks", "nivea men face wash", "Fogg black"]
 //combine
-let shoppingCart = shoppingCartSnacks.concat(shoppingCart2);
-shoppingCartSnacks[0].item = "Noodles";//we can change the value in reference type any time .... that will changes all the memory mentions
+// let shoppingCart = shoppingCartSnacks.concat(shoppingCart2);
+////////////////////////////////////////////////////////////////////////////////////////SPREAD OPERATOR
+let shoppingCart = [...shoppingCart2, 18, "yuvan",  ...shoppingCartSnacks]
+
 
 //extract
 let extract= shoppingCart.slice(1,3 )
 
 
 console.log(shoppingCart);
-console.log(extract);
+// console.log(extract);
 
 
 
