@@ -527,14 +527,95 @@
 // console.log(`My First name is ${firstname} and My last name is ${lastname}`);
 // // console.log(name);
 
-let postTitle =`This is My Post!`.toLowerCase();
-let postslug = postTitle.split(" ");
+// let postTitle =`This is My Post!`.toLowerCase();
+// let postslug = postTitle.split(" ");
  
-let finalslug = postslug.join("_");
+// let finalslug = postslug.join("_");
 
 
 
-console.log(finalslug);
+// console.log(finalslug);
+
+/////////////////////////////////////////////////////////////////////Sorting a JavaScript Array
+
+// const students = [1, 8, 3, 7]
+
+// students.sort( (a,b) => {
+//     return b-a;
+// })  ///////////////////////decending   //accending = students.sort();
+
+
+// students.reverse()
+
+const students = [
+    {id:1, name:"Senthil"},
+    {id:5, name:"Guna"},
+    {id:7, name:"Velu"},
+    {id:12, name:"Thambi"},
+    {id:15, name:"anbu"},
+    {id:21, name:"Rajan"},
+];
+
+// students.sort((a,b) =>{
+//     // a < b => -1
+//     if (a.name < b.name) return -1;
+
+//     //a < b => 1
+//     if(a.name > b.name) return +1;
+
+//     // a === b => 0
+//         return 0;
+// })
+
+// students.sort((a,b) =>{
+//     // a < b => -1
+//     if (a.id < b.id) return -1;
+
+//     //a < b => 1
+//     if(a.id > b.id) return +1;
+
+//     // a === b => 0
+//         return 0;
+// });
+
+
+// to do without case sensitive
+students.sort((a,b) =>{
+
+    nameA = a.name.toLowerCase();
+    nameB = b.name.toLowerCase();
+
+    // a < b => -1
+    if (nameA < nameB) return -1;
+
+    //a < b => 1
+    if(nameA > nameB) return +1;
+
+    // a === b => 0
+        return 0;
+})
+
+
+console.log(students);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
