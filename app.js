@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////////////////////////////////////// VARIABLE NAMES 
+///////////////////////////////////////////////////////////////////////////////////// VARIABLE nameS 
 // var - old way of saving variables
 // let - modern way of saving varables(we can modify or edit value any time)
 // const - we can't change the value (permanent value we can't edit or modify)
@@ -490,23 +490,51 @@
 // // console.log(extract);
 
 
-//////////////////////////////////////////////////////////////////////////JavaScript Arrays: Iterating Elements
-const dailyRoutine = ["Wake up", "Eat", "Sleep"];
+// //////////////////////////////////////////////////////////////////////////JavaScript Arrays: Iterating Elements
+// const dailyRoutine = ["Wake up", "Eat", "Sleep"];
 
-// //for-of
-// for (let routine of dailyRoutine)
-//     console.log(routine);
+// // //for-of
+// // for (let routine of dailyRoutine)
+// //     console.log(routine);
 
-// //For-in
+// // //For-in
 
-//  for(let routine in dailyRoutine){
-//     console.log(routine, dailyRoutine[routine]);
-//  }
+// //  for(let routine in dailyRoutine){
+// //     console.log(routine, dailyRoutine[routine]);
+// //  }
 
 
-//FOR-EACH
-dailyRoutine.forEach(routine => { console.log(routine) })
+// //FOR-EACH
+// dailyRoutine.forEach(routine => { console.log(routine) })
 
+
+////////////////////////////////////////////////////////////////////////////////Joining and Splitting JavaScript Arrays
+/////JOINING
+// const dailyRoutine = ["Wake up", "Eat", "Sleep"];
+
+// let dailyRoutines= dailyRoutine.join("'s ");
+
+// console.log(dailyRoutines);
+
+///////Splitting
+// let fullname ="yuvan raj"
+
+// let username = fullname.split(" ")
+
+// let firstname = username[0];
+// let lastname = username[1];
+
+// console.log(`My First name is ${firstname} and My last name is ${lastname}`);
+// // console.log(name);
+
+let postTitle =`This is My Post!`.toLowerCase();
+let postslug = postTitle.split(" ");
+ 
+let finalslug = postslug.join("_");
+
+
+
+console.log(finalslug);
 
 
 
