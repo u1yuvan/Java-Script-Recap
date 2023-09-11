@@ -421,7 +421,7 @@
 //     {id:2, item: "earpods", quantity:1}
 // ];
 
-    
+
 //  let result = orders.find(function(order){
 //    return order.item === "earpods"
 //    })//////////////////////////////////////////////////////////modifing this function into ARROW FUNCTION
@@ -474,20 +474,50 @@
 
 ////////////////////////////////////////////////////////////////////////COMBINING Arrays
 
-let shoppingCartSnacks = [{item: "Potato chips"} ];
-let shoppingCart2 = ["banana chips", "Soft Drinks", "nivea men face wash", "Fogg black"]
-//combine
-// let shoppingCart = shoppingCartSnacks.concat(shoppingCart2);
-////////////////////////////////////////////////////////////////////////////////////////SPREAD OPERATOR
-let shoppingCart = [...shoppingCart2, 18, "yuvan",  ...shoppingCartSnacks]
+// let shoppingCartSnacks = [{item: "Potato chips"} ];
+// let shoppingCart2 = ["banana chips", "Soft Drinks", "nivea men face wash", "Fogg black"]
+// //combine
+// // let shoppingCart = shoppingCartSnacks.concat(shoppingCart2);
+// ////////////////////////////////////////////////////////////////////////////////////////SPREAD OPERATOR
+// let shoppingCart = [...shoppingCart2, 18, "yuvan",  ...shoppingCartSnacks]
 
 
-//extract
-let extract= shoppingCart.slice(1,3 )
+// //extract
+// let extract= shoppingCart.slice(1,3 )
 
 
-console.log(shoppingCart);
-// console.log(extract);
+// console.log(shoppingCart);
+// // console.log(extract);
+
+
+//////////////////////////////////////////////////////////////////////////JavaScript Arrays: Iterating Elements
+const dailyRoutine = ["Wake up", "Eat", "Sleep"];
+
+// //for-of
+// for (let routine of dailyRoutine)
+//     console.log(routine);
+
+// //For-in
+
+//  for(let routine in dailyRoutine){
+//     console.log(routine, dailyRoutine[routine]);
+//  }
+
+
+//FOR-EACH
+dailyRoutine.forEach(routine => { console.log(routine) })
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
