@@ -612,31 +612,60 @@
 
 //////////////////////////////////////////////////////////////////Testing Elements in JavaScript Array
 
-const items = [
-    {id:1, name: "Mobiles", isDeliverable: true}, 
-    {id:2, name: "smartwatch", isDeliverable: false},
-    {id:3, name: "headphones", isDeliverable: true},
+// const items = [
+//     {id:1, name: "Mobiles", isDeliverable: true}, 
+//     {id:2, name: "smartwatch", isDeliverable: false},
+//     {id:3, name: "headphones", isDeliverable: true},
+// ];
+
+// let allDeliverables = items.every((value) => {
+//       return value.isDeliverable == true;
+// });
+
+
+// let notDeliverables = items.some((value) => {
+//     return value.isDeliverable == true;
+// });
+
+
+// console.log("allDeliverables: ",allDeliverables);
+// console.log("notDeliverables: ",notDeliverables);
+
+
+//////////////////////////////////////////////////////////////////Filtering  an JavaScript Array 
+
+// const queueByAge = [24, 32, 15,45,12,23,10,18,36];
+// let adults = queueByAge.filter((value) => {
+//       return value >= 18;
+// });
+
+
+// console.log(`Adults: `, adults);
+
+// const numbers = [1,2,3,4,5,6,7];
+
+// let evenNumbers = numbers.filter((value) => {
+//       return value % 2 === 0;
+// });
+
+// let oddNumbers = numbers.filter((value) => {
+//     return value % 2 === 1;
+// });
+
+// console.log(`Even Numbers: `,evenNumbers,`
+// Odd Numbers: `,oddNumbers);
+
+
+const cartItems = [
+    {id:1, item:'Nokia', cost:2500},
+    {id:2, item:'redmi 5a', cost:5000},
+    {id:3, item:'vivo S1', cost:18000},
+    {id:4, item:'OnePlus 11R', cost:45000},
 ];
 
-let allDeliverables = items.every((value) => {
-      return value.isDeliverable == true;
-});
+let budgetMobiles = cartItems.filter((value) => value.cost < 10000);
 
-
-let notDeliverables = items.some((value) => {
-    return value.isDeliverable == true;
-});
-
-
-console.log("allDeliverables: ",allDeliverables);
-console.log("notDeliverables: ",notDeliverables);
-
-
-
-
-
-
-
+console.log(`Budget Mobiles: `, budgetMobiles);
 
 
 
