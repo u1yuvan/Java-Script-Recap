@@ -686,22 +686,40 @@
 // console.log(`Budget Mobiles: `, MobilesIndex);
 
 // /////////////////////////////////////////////////////////////////////JavaScript Arrays: Map function()
-const people = [
-    {id:1, firstname:"yuvan", lastname:"raj"},
-    {id:2, firstname:"virat", lastname:"kohli"},
-    {id:3, firstname:"will", lastname:"smith"},
-];
+// const people = [
+//     {id:1, firstname:"yuvan", lastname:"raj"},
+//     {id:2, firstname:"virat", lastname:"kohli"},
+//     {id:3, firstname:"will", lastname:"smith"},
+// ];
 
-let final = people.map((val) => {
-   let fullname =[val.firstname , val.lastname].join(" ");
-   let obj = {id: val.id, fullname};
-   return obj;
-});
+// let final = people.map((val) => {
+//    let fullname =[val.firstname , val.lastname].join(" ");
+//    let obj = {id: val.id, fullname};
+//    return obj;
+// });
+
+// console.log(final);
+
+//////////////////////////////////////////////////////////////////////////JavaScript Arrays: Chaining method
+
+let items = [
+    { id: 2, name: 'redmi 5a', cost: 5000 },
+    { id: 4, name: 'OnePlus 11R', cost: 45000 },
+    { id: 3, name: 'vivo S1', cost: 18000 },
+    { id: 1, name: 'Nokia', cost: 2500 },
+]
+
+let final = items.sort((a,b) => a.cost - b.cost 
+).sort((a,b) => {
+    if (a.name  < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 1;})
+    .filter((val) => val.cost <= 8000)
+    .map((val)=>{
+    return val.name + "- ₹"+ val.cost;
+} );
 
 console.log(final);
-
-
-
 
 
 
