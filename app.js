@@ -529,7 +529,7 @@
 
 // let postTitle =`This is My Post!`.toLowerCase();
 // let postslug = postTitle.split(" ");
- 
+
 // let finalslug = postslug.join("_");
 
 
@@ -547,14 +547,14 @@
 
 // students.reverse()
 
-const students = [
-    {id:1, name:"Senthil"},
-    {id:5, name:"Guna"},
-    {id:7, name:"Velu"},
-    {id:12, name:"Thambi"},
-    {id:15, name:"anbu"},
-    {id:21, name:"Rajan"},
-];
+// const students = [
+//     {id:1, name:"Senthil"},
+//     {id:5, name:"Guna"},
+//     {id:7, name:"Velu"},
+//     {id:12, name:"Thambi"},
+//     {id:15, name:"anbu"},
+//     {id:21, name:"Rajan"},
+// ];
 
 // students.sort((a,b) =>{
 //     // a < b => -1
@@ -579,24 +579,34 @@ const students = [
 // });
 
 
-// to do without case sensitive
-students.sort((a,b) =>{
+// // to do without case sensitive
+// students.sort((a,b) =>{
 
-    nameA = a.name.toLowerCase();
-    nameB = b.name.toLowerCase();
+//     nameA = a.name.toLowerCase();
+//     nameB = b.name.toLowerCase();
 
-    // a < b => -1
-    if (nameA < nameB) return -1;
+//     // a < b => -1
+//     if (nameA < nameB) return -1;
 
-    //a < b => 1
-    if(nameA > nameB) return +1;
+//     //a < b => 1
+//     if(nameA > nameB) return +1;
 
-    // a === b => 0
-        return 0;
-})
+//     // a === b => 0
+//         return 0;
+// })
 
 
-console.log(students);
+// console.log(students);
+
+/////////////////////////////////////////////////////////////////PRIMITIVES Testing an JavaScript Array
+
+//Allow only Adults above 18
+const queueByAge = [24, 32, 15]
+let isAllowed = queueByAge.some((value, index, array) => {              
+return value >= 18;
+});
+
+console.log("isAllowed: ", isAllowed);
 
 
 
