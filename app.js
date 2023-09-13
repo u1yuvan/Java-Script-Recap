@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////////////////////////////////////// VARIABLE nameS 
+///////////////////////////////////////////////////////////////////////////////////// VARIABLE nameS
 // var - old way of saving variables
 // let - modern way of saving varables(we can modify or edit value any time)
 // const - we can't change the value (permanent value we can't edit or modify)
@@ -144,7 +144,7 @@
 // eligiblePerson = highIncome || Cibilscore
 
 // let ApplicationStatus = !
-//  eligiblePerson 
+//  eligiblePerson
 // console.log("Loan Status: " +  eligiblePerson);
 // console.log("Application Status: " +  ApplicationStatus);
 
@@ -327,7 +327,7 @@
 //         name,
 //         greeting() {
 //             console.log(`My name is ${this.name}`);
-//         } 
+//         }
 //     };
 // };
 
@@ -435,7 +435,7 @@
 // const number = [18,37,20,34,5647,46,456]
 
 
-// //end 
+// //end
 // // to add .push => pop to remove
 // number.pop()
 
@@ -446,7 +446,7 @@
 
 
 // //middle
-// //splice to add in middle => 
+// //splice to add in middle =>
 // number.splice(1,1)
 
 
@@ -466,7 +466,7 @@
 // 3
 // numbers.splice(0, numbers.length);
 
-// 4 
+// 4
 // while (numbers.length) numbers.pop();
 
 
@@ -602,7 +602,7 @@
 
 //Allow only Adults above 18
 // const queueByAge = [24, 32, 15]
-// let isAllowed = queueByAge.some((value, index, array) => {              
+// let isAllowed = queueByAge.some((value, index, array) => {
 // return value >= 18;
 // });
 
@@ -613,7 +613,7 @@
 //////////////////////////////////////////////////////////////////Testing Elements in JavaScript Array
 
 // const items = [
-//     {id:1, name: "Mobiles", isDeliverable: true}, 
+//     {id:1, name: "Mobiles", isDeliverable: true},
 //     {id:2, name: "smartwatch", isDeliverable: false},
 //     {id:3, name: "headphones", isDeliverable: true},
 // ];
@@ -632,7 +632,7 @@
 // console.log("notDeliverables: ",notDeliverables);
 
 
-//////////////////////////////////////////////////////////////////Filtering  an JavaScript Array 
+//////////////////////////////////////////////////////////////////Filtering  an JavaScript Array
 
 // const queueByAge = [24, 32, 15,45,12,23,10,18,36];
 // let adults = queueByAge.filter((value) => {
@@ -656,22 +656,67 @@
 // Odd Numbers: `,oddNumbers);
 
 
-const cartItems = [
-    {id:1, item:'Nokia', cost:2500},
-    {id:2, item:'redmi 5a', cost:5000},
-    {id:3, item:'vivo S1', cost:18000},
-    {id:4, item:'OnePlus 11R', cost:45000},
-];
+// const cartItems = [
+//     {id:1, item:'Nokia', cost:2500},
+//     {id:2, item:'redmi 5a', cost:5000},
+//     {id:3, item:'vivo S1', cost:18000},
+//     {id:4, item:'OnePlus 11R', cost:45000},
+// ];
 
-let budgetMobiles = cartItems.find((value) => value.cost >= 20000);
-let MobilesIndex = cartItems.findIndex((value) => value.cost >= 20000);
-
-console.log(`Budget Mobiles: `, budgetMobiles);
-console.log(`Budget Mobiles: `, MobilesIndex);
+// let budgetMobiles = cartItems.find((value) => value.cost >= 20000);
+// console.log(`Budget Mobiles: `, budgetMobiles);
 
 
 
 ///////////////////////////////////////////////////////////Finding an JavaScript array
+
+
+
+// const cartItems = [
+//     {id:1, item:'Nokia', cost:2500},
+//     {id:2, item:'redmi 5a', cost:5000},
+//     {id:3, item:'vivo S1', cost:18000},
+//     {id:4, item:'OnePlus 11R', cost:45000},
+// ];
+
+// let budgetMobiles = cartItems.find((value) => value.cost >= 20000);
+// let MobilesIndex = cartItems.findIndex((value) => value.cost >= 20000);
+
+// console.log(`Budget Mobiles: `, budgetMobiles);
+// console.log(`Budget Mobiles: `, MobilesIndex);
+
+// /////////////////////////////////////////////////////////////////////JavaScript Arrays: Map function()
+const people = [
+    {id:1, firstname:"yuvan", lastname:"raj"},
+    {id:2, firstname:"virat", lastname:"kohli"},
+    {id:3, firstname:"will", lastname:"smith"},
+];
+
+let final = people.map((val) => {
+   let fullname =[val.firstname , val.lastname].join(" ");
+   let obj = {id: val.id, fullname};
+   return obj;
+});
+
+console.log(final);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
