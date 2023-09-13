@@ -663,9 +663,15 @@ const cartItems = [
     {id:4, item:'OnePlus 11R', cost:45000},
 ];
 
-let budgetMobiles = cartItems.filter((value) => value.cost < 10000);
+let budgetMobiles = cartItems.find((value) => value.cost >= 20000);
+let MobilesIndex = cartItems.findIndex((value) => value.cost >= 20000);
 
 console.log(`Budget Mobiles: `, budgetMobiles);
+console.log(`Budget Mobiles: `, MobilesIndex);
+
+
+
+///////////////////////////////////////////////////////////Finding an JavaScript array
 
 
 
