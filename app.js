@@ -601,21 +601,35 @@
 /////////////////////////////////////////////////////////////////PRIMITIVES Testing an JavaScript Array
 
 //Allow only Adults above 18
-const queueByAge = [24, 32, 15]
-let isAllowed = queueByAge.some((value, index, array) => {              
-return value >= 18;
+// const queueByAge = [24, 32, 15]
+// let isAllowed = queueByAge.some((value, index, array) => {              
+// return value >= 18;
+// });
+
+// console.log("isAllowed: ", isAllowed);
+
+
+
+//////////////////////////////////////////////////////////////////Testing Elements in JavaScript Array
+
+const items = [
+    {id:1, name: "Mobiles", isDeliverable: true}, 
+    {id:2, name: "smartwatch", isDeliverable: false},
+    {id:3, name: "headphones", isDeliverable: true},
+];
+
+let allDeliverables = items.every((value) => {
+      return value.isDeliverable == true;
 });
 
-console.log("isAllowed: ", isAllowed);
+
+let notDeliverables = items.some((value) => {
+    return value.isDeliverable == true;
+});
 
 
-
-
-
-
-
-
-
+console.log("allDeliverables: ",allDeliverables);
+console.log("notDeliverables: ",notDeliverables);
 
 
 
