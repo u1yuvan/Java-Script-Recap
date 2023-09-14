@@ -732,19 +732,66 @@
 
 
 //in object 
-const shoppingCart = [
-    {id:1, item:"Wheat bread", cost:40},
-    {id:2, item:"Jam", cost:65},
-    {id:3, item:"Milk", cost:35},
-    {id:4, item:"Potato Chips", cost:50},
-];
+// const shoppingCart = [
+//     {id:1, item:"Wheat bread", cost:40},
+//     {id:2, item:"Jam", cost:65},
+//     {id:3, item:"Milk", cost:35},
+//     {id:4, item:"Potato Chips", cost:50},
+// ];
 
-const addCost = (previousval,currentval) => {
-    return previousval + currentval.cost;
-};
-let totalCost = shoppingCart.reduce(addCost,0);
+// const addCost = (previousval,currentval) => {
+//     return previousval + currentval.cost;
+// };
+// let totalCost = shoppingCart.reduce(addCost,0);
 
-console.log("totalCost:",totalCost);
+// console.log("totalCost:",totalCost);
+
+
+///////////////////////////////////////////////Difference Between  sort(), filter(), map(), reduce() METHODS
+
+const numbers = [4,6,9,2,45,35,12,18];
+
+//sort()
+
+// let result = numbers.sort(); 
+
+
+//Find
+// let result = numbers.find((val) => {
+//    return val > 15;
+// });
+
+
+
+//filter
+
+// let result = numbers.filter((val) => {
+//     return val > 15;
+//  });
+ 
+
+//map
+
+// let result = numbers.map((val) => {
+//     return "@" +val;;
+//  });
+
+let result = numbers.map((previousval,currentval) => {
+    return previousval * currentval;
+ });
+
+
+//reduce
+
+// let result = numbers.reduce((previousval,currentval) => {
+//     return previousval + currentval;
+//  });
+
+
+
+
+
+console.log(result);
 
 
 
