@@ -702,29 +702,49 @@
 
 //////////////////////////////////////////////////////////////////////////JavaScript Arrays: Chaining method
 
-let items = [
-    { id: 2, name: 'redmi 5a', cost: 5000 },
-    { id: 4, name: 'OnePlus 11R', cost: 45000 },
-    { id: 3, name: 'vivo S1', cost: 18000 },
-    { id: 1, name: 'Nokia', cost: 2500 },
-]
+// let items = [
+//     { id: 2, name: 'redmi 5a', cost: 5000 },
+//     { id: 4, name: 'OnePlus 11R', cost: 45000 },
+//     { id: 3, name: 'vivo S1', cost: 18000 },
+//     { id: 1, name: 'Nokia', cost: 2500 },
+// ]
 
-let final = items.sort((a,b) => a.cost - b.cost 
-).sort((a,b) => {
-    if (a.name  < b.name) return -1;
-    if (a.name > b.name) return 1;
-    return 1;})
-    .filter((val) => val.cost <= 8000)
-    .map((val)=>{
-    return val.name + "- ₹"+ val.cost;
-} );
+// let final = items.sort((a,b) => a.cost - b.cost 
+// ).sort((a,b) => {
+//     if (a.name  < b.name) return -1;
+//     if (a.name > b.name) return 1;
+//     return 1;})
+//     .filter((val) => val.cost <= 8000)
+//     .map((val)=>{
+//     return val.name + "- ₹"+ val.cost;
+// } );
 
-console.log(final);
+// console.log(final);
+
+//////////////////////////////////////////////////////////////////////////JavaScript Array Reduce Method 
+// const donations = [123, 64, 7456, 4546, 35, 2, 32, 4];
+
+// let totalDonations = donations.reduce((previousval, currentval)=> {
+//     return previousval + currentval;
+// });
+
+// console.log(totalDonations);
 
 
+//in object 
+const shoppingCart = [
+    {id:1, item:"Wheat bread", cost:40},
+    {id:2, item:"Jam", cost:65},
+    {id:3, item:"Milk", cost:35},
+    {id:4, item:"Potato Chips", cost:50},
+];
 
+const addCost = (previousval,currentval) => {
+    return previousval + currentval.cost;
+};
+let totalCost = shoppingCart.reduce(addCost,0);
 
-
+console.log("totalCost:",totalCost);
 
 
 
