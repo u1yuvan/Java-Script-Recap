@@ -835,22 +835,36 @@
 ////////////////////////////////////////////////////////////////////////////Self Invoking Functions --(IIFE) 
 
 ///////////////Immediately Invoking Function Expression
-(() => {
-    let num1 = 345525;
- let num2 = 3435415;
-    let result = num1 + num2;
-    (function displayNumber(){
-        console.log(result);
-    })();
- })();
+/* A JavaScript immediately invoked function expression is a function defined as an expression and 
+executed immediately after creation*/
+// (() => {
+//     let num1 = 345525;
+//  let num2 = 3435415;
+//     let result = num1 + num2;
+//     (function displayNumber(){
+//         console.log(result);
+//     })();
+//  })();
 
-//  addNumbers()
+////////////////////////////////////////////////////////////////////////JavaScript Arguments 
+
+function expense()  {
+    let total = 0;
+    for (let value of arguments){
+        total += value;
+    }
+    return total
+};
+
+result = expense(60,120,70,58,46,955);
+console.log(`Your total expense is:  ${result}`);
 
 
 
 
 
 
+ 
 
 
 
