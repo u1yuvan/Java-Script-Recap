@@ -768,7 +768,7 @@
 // let result = numbers.filter((val) => {
 //     return val > 15;
 //  });
- 
+
 
 //map
 
@@ -848,15 +848,14 @@ executed immediately after creation*/
 
 ////////////////////////////////////////////////////////////////////////JavaScript Arguments 
 
-function expense()  {
-    let total = 0;
-    for (let value of arguments){
-        total += value;
-    }
-    return total
+function expense(...sumExpenses) {
+
+return sumExpenses.reduce((a, b)=> {
+  return a + b;
+});
 };
 
-result = expense(60,120,70,58,46,955);
+let result = expense(60, 120, 70, 58, 46, 955, 46, 85);
 console.log(`Your total expense is:  ${result}`);
 
 
@@ -864,7 +863,6 @@ console.log(`Your total expense is:  ${result}`);
 
 
 
- 
 
 
 
