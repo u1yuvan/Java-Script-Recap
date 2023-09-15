@@ -791,8 +791,8 @@
 // console.log(result);
 
 ////////////////////////////////JavaScript Function Declaration vs Function Expression
-let no1= 2424425;
-let no2= 7635825;
+// let no1= 2424425;
+// let no2= 7635825;
 
 //Function Declaration
 // function addNo(){
@@ -812,14 +812,24 @@ let no2= 7635825;
 //     console.log(result);
 // };
 
-const addNo = new Function("console.log(no1+ no2)");
+// const addNo = new Function("console.log(no1+ no2)")
 
-addNo()
+// addNo()
 
+//////////////////////////////////////////////////////////////////JavaScript Hoisting 
+//Function Declaration 
+// addNoDeclaration()
 
+function addNoDeclaration() {
+    console.log("Adding no from Func. Declaration")
+};
 
+//Function Expression
+addNoExpression()
 
-
+let addNoExpression = function(){
+    console.log("Adding no from Func. Expression")
+};
 
 
 
