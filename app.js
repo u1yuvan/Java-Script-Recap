@@ -749,7 +749,7 @@
 
 ///////////////////////////////////////////////Difference Between  sort(), filter(), map(), reduce() METHODS
 
-const numbers = [4,6,9,2,45,35,12,18];
+// const numbers = [4,6,9,2,45,35,12,18];
 
 //sort()
 
@@ -776,9 +776,9 @@ const numbers = [4,6,9,2,45,35,12,18];
 //     return "@" +val;;
 //  });
 
-let result = numbers.map((previousval,currentval) => {
-    return previousval * currentval;
- });
+// let result = numbers.map((previousval,currentval) => {
+//     return previousval * currentval;
+//  });
 
 
 //reduce
@@ -788,18 +788,33 @@ let result = numbers.map((previousval,currentval) => {
 //  });
 
 
+// console.log(result);
 
+////////////////////////////////JavaScript Function Declaration vs Function Expression
+let no1= 2424425;
+let no2= 7635825;
 
+//Function Declaration
+// function addNo(){
+//        let result = no1 + no2;
+//        console.log(result);
+// };
 
-console.log(result);
+//Function Expression(Named Function Expression)
+// const addNo = function addNo() {
+//     let result = no1 + no2;
+//     console.log(result);
+// };
 
+//Anonymous Function Expression
+// const addNo =() => {
+//     let result = no1 + no2;
+//     console.log(result);
+// };
 
+const addNo = new Function("console.log(no1+ no2)")
 
-
-
-
-
-
+addNo()
 
 
 
