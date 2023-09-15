@@ -817,19 +817,55 @@
 // addNo()
 
 //////////////////////////////////////////////////////////////////JavaScript Hoisting 
-//Function Declaration 
+
 // addNoDeclaration()
+// addNoExpression()
 
-function addNoDeclaration() {
-    console.log("Adding no from Func. Declaration")
-};
+// //Function Declaration
+// function addNoDeclaration() {
+//     console.log("Adding no from Func. Declaration")
+// };
 
-//Function Expression
-addNoExpression()
+// //Function Expression
+// let addNoExpression = function(){
+//     console.log("Adding no from Func. Expression")
+// };
 
-let addNoExpression = function(){
-    console.log("Adding no from Func. Expression")
-};
+
+////////////////////////////////////////////////////////////////////////////Self Invoking Functions --(IIFE) 
+
+///////////////Immediately Invoking Function Expression
+(() => {
+    let num1 = 345525;
+ let num2 = 3435415;
+    let result = num1 + num2;
+    (function displayNumber(){
+        console.log(result);
+    })();
+ })();
+
+//  addNumbers()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
