@@ -812,7 +812,7 @@ let no2= 7635825;
 //     console.log(result);
 // };
 
-const addNo = new Function("console.log(no1+ no2)")
+const addNo = new Function("console.log(no1+ no2)");
 
 addNo()
 
