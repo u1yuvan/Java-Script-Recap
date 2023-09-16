@@ -846,25 +846,27 @@ executed immediately after creation*/
 //     })();
 //  })();
 
-////////////////////////////////////////////////////////////////////////JavaScript Arguments 
+////////////////////////////////////////////////////////////////////////JavaScript Rest Operator 
 
-function expense(...sumExpenses) {
+// function expense(EMI,...sumExpenses) {
 
-return sumExpenses.reduce((a, b)=> {
-  return a + b;
-});
-};
+// let total = sumExpenses.reduce((a, b)=> a + b);
+// return total - EMI
+// };
 
-let result = expense(60, 120, 70, 58, 46, 955, 46, 85);
-console.log(`Your total expense is:  ${result}`);
+// let result = expense(1000, 120, 70, 58, 46, 955, 46, 85);
+// console.log(`Your total expense is:  ${result}`);
 
+///////////////////////////////////////////////////////////////////////JavaScript Default Parameters
 
+function calculateTax(cost,tax = 18,){
+// tax = tax ?? 18
+ taxAmount = cost * (tax/100);
+ console.log(`Total cost is: ₹${cost}\n\n GST of tax(${tax}%) is ${taxAmount} 
+ \n\n Total amount is: ₹${cost + taxAmount}`);
+}
 
-
-
-
-
-
+calculateTax(45)
 
 
 
