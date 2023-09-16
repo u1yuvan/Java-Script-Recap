@@ -857,16 +857,134 @@ executed immediately after creation*/
 // let result = expense(1000, 120, 70, 58, 46, 955, 46, 85);
 // console.log(`Your total expense is:  ${result}`);
 
-///////////////////////////////////////////////////////////////////////JavaScript Default Parameters
+// ///////////////////////////////////////////////////////////////////////JavaScript Default Parameters
 
-function calculateTax(cost,tax = 18,){
-// tax = tax ?? 18
- taxAmount = cost * (tax/100);
- console.log(`Total cost is: ₹${cost}\n\n GST of tax(${tax}%) is ${taxAmount} 
- \n\n Total amount is: ₹${cost + taxAmount}`);
-}
+// function calculateTax(cost,tax = 18,){
+// // tax = tax ?? 18
+//  taxAmount = cost * (tax/100);
+//  console.log(`Total cost is: ₹${cost}\n\n GST of tax(${tax}%) is ${taxAmount} 
+//  \n\n Total amount is: ₹${cost + taxAmount}`);
+// }
 
-calculateTax(45)
+// calculateTax(45)
+
+
+/////////////////////////////////////////////////////////////////////////////////JavaScript Getters and Setters
+
+let  student = {
+    firstName: "yuvan", //data property
+    lastName: 'raj',
+    get fullName(){
+      return  ` ${student.firstName} ${student.lastName}`;
+    },
+
+   set fullName(value){
+let values = value.split(" ");
+this.firstName = values[0];
+this.lastName = values[1] ?? "";
+},
+};
+
+student.fullName = 'Viratkohli';
+
+console.log(student.fullName);
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
