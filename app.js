@@ -869,7 +869,8 @@ executed immediately after creation*/
 // calculateTax(45)
 
 
-/////////////////////////////////////////////////////////////////////////////////JavaScript Getters and Setters
+//////////////////////////////////////////////////////////////////////////JavaScript Getters and Setters
+
 
 let  student = {
     firstName: "yuvan", //data property
@@ -885,7 +886,7 @@ this.lastName = values[1] ?? "";
 },
 };
 
-student.fullName = 'Viratkohli';
+student.fullName = 'Sridhar';
 
 console.log(student.fullName);
 
