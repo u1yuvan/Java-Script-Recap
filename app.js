@@ -871,39 +871,55 @@ executed immediately after creation*/
 
 //////////////////////////////////////////////////////////////////////////JavaScript Getters and Setters
 
+// //////////////////////////////////////////////////////////////JavaScript rror Handling try, catch and Throw
+// let  student = {
+//     firstName: "yuvan", //data property
+//     lastName: 'raj',
+//     get fullName(){
+//       return  ` ${student.firstName} ${student.lastName}`;
+//     },
 
-let  student = {
-    firstName: "yuvan", //data property
-    lastName: 'raj',
-    get fullName(){
-      return  ` ${student.firstName} ${student.lastName}`;
-    },
-
-   set fullName(value){
-    if(typeof value != "string") {
-      const err =new  Error("It's not a String");
-      throw err;
-    }
-      if (value.length <= 3)throw ('Name invalid!')
+//    set fullName(value){
+//     if(typeof value != "string") {
+//       const err =new  Error("It's not a String");
+//       throw err;
+//     }
+//       if (value.length <= 3)throw ('Name invalid!')
 
 
-let values = value.split(" ");
-this.firstName = values[0];
-this.lastName = values[1] ?? "";
-},
-};
+// let values = value.split(" ");
+// this.firstName = values[0];
+// this.lastName = values[1] ?? "";
+// },
+// };
 
-try{
-  // Defensive programming
-  student.fullName = "y";
-} catch(err) {
-alert(err);
+// try{
+//   // Defensive programming
+//   student.fullName = "y";
+// } catch(err) {
+// alert(err);
+// }
+
+// console.log(student.fullName);
+
+
+/////////////////////////////////////////////////////////////////////////////JAVASCRIPT Scopes (Global vs Local scope)
+let userName = "Yuvan";
+
+
+
+function greetUser() {
+  let userName = "Virat"
+  let message = "Hello "+ userName;
+
+  log(message);
 }
 
-console.log(student.fullName);
-
-
-
+function log(message){
+  console.log(message);
+};
+console.log(userName);
+greetUser();
 
 
 
