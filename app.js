@@ -880,16 +880,27 @@ let  student = {
     },
 
    set fullName(value){
+    if(typeof value != "string") {
+      const err =new  Error("It's not a String");
+      throw err;
+    }
+      if (value.length <= 3)throw ('Name invalid!')
+
+
 let values = value.split(" ");
 this.firstName = values[0];
 this.lastName = values[1] ?? "";
 },
 };
 
-student.fullName = 'Sridhar';
+try{
+  // Defensive programming
+  student.fullName = "y";
+} catch(err) {
+alert(err);
+}
 
 console.log(student.fullName);
-
 
 
 
