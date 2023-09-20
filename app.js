@@ -922,19 +922,77 @@ executed immediately after creation*/
 // greetUser();
 
 
-/////////////////////////////////////////////////////////////////////////Difference between var and let Keyword
+// /////////////////////////////////////////////////////////////////////////Difference between var and let Keyword
 
-function displayNumber(){
-    for (i = 1; i <= 50; ++i ){
+// function displayNumber(){           //var is a function scope we access it anywere inbetween this function
+//     for (i = 1; i <= 50; ++i ){
        
-        if  (i % 2 !== 1){
-            var msg = "hello Everyone";
-        }
+//         if  (i % 2 !== 1){
+//             var msg = "hello Everyone";
+//         }
 
-            console.log("Even Numbers #"+ i);
-    }
-    console.log(msg);
+//             console.log("Even Numbers #"+ i);
+//     }
+//     console.log(msg);
+// };
+
+// displayNumber();
+
+// // // let is a block scope it can only accessible in that block 
+
+/////////////////////////////////////////////////////////////////////////////JavaScript This keyWord
+
+//method => obj
+
+// function => global(window, global)
+
+
+const channel = {
+     title: "Half_Baked",
+     Languages: ["Tamil", "Telugu", "English"],
+     Subscribe() {
+          console.log(this);
+     },
+     showVideos() {
+          this.Languages.forEach(
+               function(Lang) {
+               console.log(this.title + " - " + Lang);
+          }, 
+          this
+          );
+     },
 };
 
-displayNumber();
+channel.showVideos()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
