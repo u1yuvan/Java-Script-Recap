@@ -903,143 +903,38 @@ executed immediately after creation*/
 // console.log(student.fullName);
 
 
-/////////////////////////////////////////////////////////////////////////////JAVASCRIPT Scopes (Global vs Local scope)
-let userName = "Yuvan";
+// /////////////////////////////////////////////////////////////////////////////JAVASCRIPT Scopes (Global vs Local scope)
+// let userName = "Yuvan";
 
 
 
-function greetUser() {
-  let userName = "Virat"
-  let message = "Hello "+ userName;
+// function greetUser() {
+//   let userName = "Virat"
+//   let message = "Hello "+ userName;
 
-  log(message);
-}
+//   log(message);
+// }
 
-function log(message){
-  console.log(message);
+// function log(message){
+// console.log(message);
+// };
+// console.log(userName);
+// greetUser();
+
+
+/////////////////////////////////////////////////////////////////////////Difference between var and let Keyword
+
+function displayNumber(){
+    for (i = 1; i <= 50; ++i ){
+       
+        if  (i % 2 !== 1){
+            var msg = "hello Everyone";
+        }
+
+            console.log("Even Numbers #"+ i);
+    }
+    console.log(msg);
 };
-console.log(userName);
-greetUser();
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+displayNumber();
 
