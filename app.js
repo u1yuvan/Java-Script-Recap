@@ -143,8 +143,7 @@
 // let Cibilscore = true;
 // eligiblePerson = highIncome || Cibilscore
 
-// let ApplicationStatus = !
-//  eligiblePerson
+// let ApplicationStatus = !eligiblePerson
 // console.log("Loan Status: " +  eligiblePerson);
 // console.log("Application Status: " +  ApplicationStatus);
 
@@ -947,23 +946,30 @@ executed immediately after creation*/
 // function => global(window, global)
 
 
-const channel = {
-     title: "Half_Baked",
-     Languages: ["Tamil", "Telugu", "English"],
-     Subscribe() {
-          console.log(this);
-     },
-     showVideos() {
-          this.Languages.forEach(
-               function(Lang) {
-               console.log(this.title + " - " + Lang);
-          }, 
-          this
-          );
-     },
-};
+// const channel = {
+//      title: "Half_Baked",
+//      Languages: ["Tamil", "Telugu", "English"],
+//      Subscribe() {
+//           console.log(this);
+//      },
+//      showVideos() {
+//           let that = this;
+//           this.Languages.forEach(
+//                function(Lang) {
+//                console.log(that.title + " - " + Lang);
+//           });
+//      },
+// };
 
-channel.showVideos()
+// // channel.showVideos()
+
+// function playVideo(vtitle) {
+//      let vtitle = vtitle
+//      console.log(this);
+// }
+
+// playVideo.call({videoTitle: "JavaScript" }, "js");
+// playVideo.apply({videoTitle: "JavaScript Apply" } )
 
 
 
